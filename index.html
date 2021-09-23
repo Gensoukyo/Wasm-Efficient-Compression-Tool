@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Image Compressor</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Image Compressor <img src="wa.svg" class="wa-logo" /></h1>
+    <div class="drag-target">
+        <p>Drag your PNG,JPG image or click here to open.</p>
+        <p class="drag-error error"></p>
+    </div>
+    <div class="config">
+        Select compression level
+        <select class="sel-colors">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        &nbsp;Use progressive JPEG
+        <input class="sel-dithering" type="checkbox" />
+        &nbsp;&nbsp;
+        <label>
+            <input type="checkbox" class="check-auto-download" /> auto-download
+        </label>
+        <a href="#" class="link-download">download</a>
+    </div>
+    <div class="work">
+        <pre class="log"></pre>
+        <div class="images"></div>
+    </div>
+    <input type="file" class="input-file" accept=".png,.jpg,.jpeg" />
+    <div class="footer"><a href="https://github.com/fhanau/Efficient-Compression-Tool/blob/master/License.txt" target="_blank">Apache License 2.0</a>,
+        images are compressed with <a href="https://github.com/fhanau/Efficient-Compression-Tool" target="_blank">Efficient-Compression-Tool</a>
+</body>
+</html>
